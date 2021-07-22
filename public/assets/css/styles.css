@@ -196,8 +196,9 @@ body {
     .container-hendrix {
       flex-direction: row; } }
 
-.message__title {
-  margin: 20px; }
+.message {
+  display: flex;
+  flex-direction: column; }
 
 .hendrix-name {
   color: #e46ca8;
@@ -223,6 +224,12 @@ body {
   color: #ef2a99;
   font-size: 24px;
   font-family: "Zen Tokyo Zoo", cursive; }
+
+.audio {
+  width: 200px;
+  opacity: 0.7;
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 .header {
   min-height: 100%;
