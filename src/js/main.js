@@ -38,7 +38,7 @@ const newWindows = document.querySelector(".js-new-windows");
 
 function functionYouHaveWon() {
   newWindows.innerHTML = `
-  <div class="container-hendrix"><img src="./assets/images/hendrix.png" alt="hendrix" class="hendrix">
+  <div class="container-hendrix"><img src="./assets/images/hendrix.png" alt="hendrix" class="hendrix"/>
   <div class="message">
  <div class="messasge__img-title-container">
    <div class="message-container">
