@@ -24,7 +24,7 @@ function addMessageFuntionhandler() {
   }
   if (artist.value === "mercury") {
     message.innerHTML =
-      "¡Fredi prefería cantar!🎤No será el mejor guitarrista pero si uno de los mejores cantantes de la historia de la música";
+      "¡Freddie prefería cantar!🎤No será el mejor guitarrista pero si uno de los mejores cantantes de la historia de la música";
   }
 
   if (artist.value === "choose") {
@@ -43,7 +43,7 @@ function functionYouHaveWon() {
  <div class="messasge__img-title-container">
    <div class="message-container">
      <p class="message__profession-history">
-       <span class="hendrix-name">Jimi Hendrix</span> Nació en Seattle, Washington aunque encontró el éxito en Londres, que le recibió con los brazos abiertos y dónde empezó la gira con su banda <span class="band">The Jimi Hendrix Experience.</span>Hubo un momento clave en toda su carrera que lo elevó a los altares del rock y ese fue el Festival de Monterrey en 1967 cuando prendió fuego a su blanca stratocaster 🎸 y en el <span class="woodstock">Woodstock (1970)</span>. Fue un total autodidacta y quizá eso fue determinante para que fuese innovador en la música. Al igual que <span class="artists-club">Janis Joplin, Kurt Cobain y Jim Morrison</span> entre otros, él también forma parte del <span class="club">club de los 27.</span>
+       <span class="hendrix-name">Jimi Hendrix</span> Nació en Seattle, Washington aunque encontró el éxito en Londres, que le recibió con los brazos abiertos y dónde empezó la gira con su banda <span class="band">The Jimi Hendrix Experience.</span> Hubo un momento clave en toda su carrera que lo elevó a los altares del rock y ese fue en el <span class="woodstock">Woodstock (1970)</span> y en el Festival de Monterrey en 1967 cuando prendió fuego a su blanca stratocaster 🎸 Fue un total autodidacta y quizá eso fue determinante para que fuese innovador en la música. Al igual que <span class="artists-club">Janis Joplin, Kurt Cobain y Jim Morrison</span> entre otros, él también forma parte del <span class="club">club de los 27.</span>
      </p>
    </div>
  </div>
