@@ -1,59 +1,60 @@
 "use strict";
-//const
-const btn = document.querySelector(".js-play-button");
-const singers = document.querySelector(".js-select");
-const message = document.querySelector(".js-message");
 
-function MessageFuntionhandler() {
+const artist = document.querySelector(".js-select");
+const message = document.querySelector(".js-message");
+const playButton = document.querySelector(".js-play-button");
+
+function addMessageFuntionhandler() {
   message.classList.remove("red");
-  if (singers.value === "berry") {
-    message.innerHTML = "No tiene pinta de estar entre las carreras de letras.";
+  if (artist.value === "bowie") {
+    message.innerHTML =
+      "No es de los mejores, aunque es considerado uno de los músicos más influyentes del siglo XX 👨🏻‍🎤";
   }
-  if (singers.value === "bowie") {
-    message.innerHTML = "No tiene pinta de estar entre las carreras de letras.";
+  if (artist.value === "cohen") {
+    message.innerHTML =
+      "¡Todavía hay uno que le supera! Sus canciones, destacan particularmente por la fuerza y calidad literaria de sus letras.📝";
   }
-  if (singers.value === "mercury") {
-    message.innerHTML = "Vas por buen camino.";
+  if (artist.value === "berry") {
+    message.innerHTML =
+      "¡Vas por buen camino!. Es dificil excluir a Chuck Berry ya que es uno de los padres del rock and roll 🎵";
   }
-  if (singers.value === "hendrix") {
-    message.innerHTML = "";
-    bestGuitarPlayer();
+  if (artist.value === "hendrix") {
+    message.innerHTML = "Quién iba a ser sino 🤟🏻";
+    functionYouHaveWon();
   }
-  if (singers.value === "cohen") {
-    message.innerHTML = "No creo que tenga que ver con lo visual";
+  if (artist.value === "mercury") {
+    message.innerHTML =
+      "¡Fredi prefería cantar!🎤No será el mejor guitarrista pero si uno de los mejores cantantes de la historia de la música";
+  }
+
+  if (artist.value === "choose") {
+    message.innerHTML = "Debes escoger una artista";
   }
 }
-btn.addEventListener("click", MessageFunctionHandler);
+
+playButton.addEventListener("click", addMessageFuntionhandler);
+
 const newWindows = document.querySelector(".js-new-windows");
 
-function bestGuitarPlayer() {
-  newWindows.innerHTML = `<div class="message">
-  <div class="message__container">
-      <h2 class="message__title">Cómo no iba a ser el!!!</h2>
-  </div>
-  <div class="messasge__img-title-container">
-      <div class="titlle-container">
-          <h2 class="message__artist">Jimmy Hendrix</h2>
-      </div>
-      <div class="message-container">
-          <p class="message__artist-history">
-              Jimmy Hendrix es considerado el mejor guitarrista de la historia de la música
-          </p>
-      </div>
-  </div>
-  <input type="button" class="button__play-again js-button-play-again" value="Vuelve a jugar" />
-</div>`;
-
+function functionYouHaveWon() {
+  newWindows.innerHTML = `
+  <div class="container-hendrix"><img src="../assets/images/hendrix.png" alt="hendrix" class="hendrix">
+  <div class="message">
+ <div class="messasge__img-title-container">
+   <div class="message-container">
+     <p class="message__profession-history">
+       <span class="hendrix-name">Jimi Hendrix</span> Nació en Seattle, Washington aunque encontró el éxito en Londres, que le recibió con los brazos abiertos y dónde empezó la gira con su banda <span class="band">The Jimi Hendrix Experience.</span>Hubo un momento clave en toda su carrera que lo elevó a los altares del rock y ese fue el Festival de Monterrey en 1967 cuando prendió fuego a su blanca stratocaster 🎸 y en el <span class="woodstock">Woodstock (1970)</span>. Fue un total autodidacta y quizá eso fue determinante para que fuese innovador en la música. Al igual que <span class="artists-club">Janis Joplin, Kurt Cobain y Jim Morrison</span> entre otros, él también forma parte del <span class="club">club de los 27.</span>
+     </p>
+   </div>
+ </div>
+</div>
+</div>
+`;
   eventReturn();
 }
 
 function eventReturn() {
-  const isTrue = document.querySelector(".message");
-  const playAgain = document.querySelector(".js-button-play-again");
-  function playAgain() {
-    isTrue.classList.add("none");
-  }
-  playAgain.addEventListener("click", playAgain);
+  const youHaveWon = document.querySelector(".message");
 }
 
 //# sourceMappingURL=main.js.map

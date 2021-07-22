@@ -1,72 +1,91 @@
-.main {
-  border-radius: 10px;
-
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.image {
-  width: 50px;
-  height: 50px;
-  margin-top: 10px;
-  transform: translate(-220px);
-}
-
-.title {
-  text-transform: uppercase;
-  color: lightseagreen;
-  margin: 0;
-}
-
-.subtitle {
-  text-transform: lowercase;
-  color: gray;
-}
-.subtitle::first-letter {
-  text-transform: uppercase;
+body {
+  background-color: #e46ca8;
 }
 
 .form {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
-
-.button {
-  background-color: lightcoral;
-  color: white;
-  border: none;
-  border-radius: 20px;
-  box-shadow: lightsteelblue 3px 3px;
-  width: 100px;
-  height: 30px;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin: auto;
-  margin-top: 10px;
+.form__select {
+  width: 300px;
+  height: 50px;
+  background-color: #f39ac8;
+  border: 2px solid #ac3972;
+  border-radius: 4px;
+  color: #393636;
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 10px;
 }
-
-.button:hover {
-  transform: scale(1.2);
-}
-
-.input {
-  height: 25px;
-  width: 200px;
-  margin: auto;
+.form__message {
+  margin-top: 15px;
+  margin-bottom: 15px;
   text-align: center;
-  border: solid 1px lightseagreen;
+  width: 350px;
+  color: #393636;
+  font-family: "Roboto Condensed", sans-serif;
 }
-
-.clue {
-  text-transform: uppercase;
-  color: gray;
-  font-style: oblique;
-  margin-bottom: 0;
+.form__select:hover {
+  border: solid 3px #fcd441;
 }
-
-.try {
-  text-transform: uppercase;
-  color: gray;
-  font-style: oblique;
+.form__play-button {
+  width: 200px;
+  height: 55px;
+  border-radius: 5px;
+  background-color: #fcd441;
+  border: #fcd441;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 15px;
+}
+.form__play-button:hover {
+  transform: scale(1.2);
+  color: #e46ca8;
+}
+.hendrix {
+  width: 300px;
+  height: 300px;
+}
+.container-hendrix {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  background-color: #fcd441;
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+.message__title {
+  margin: 20px;
+}
+.hendrix-name {
+  color: #e46ca8;
+  font-size: 45px;
+  font-family: "Zen Tokyo Zoo", cursive;
+}
+.band {
+  color: #5183ac;
+  font-size: 24px;
+  font-family: "Zen Tokyo Zoo", cursive;
+}
+.woodstock {
+  color: green;
+  font-size: 32px;
+  font-family: "Zen Tokyo Zoo", cursive;
+}
+.club {
+  color: #5183ac;
+  font-size: 24px;
+  font-family: "Zen Tokyo Zoo", cursive;
+}
+.artists-club {
+  color: #ef2a99;
+  font-size: 24px;
+  font-family: "Zen Tokyo Zoo", cursive;
 }
