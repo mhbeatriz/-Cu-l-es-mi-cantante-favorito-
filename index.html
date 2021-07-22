@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" href="./images/rock.png" type="image/png" />
+    <title>Adivina el mejor guitarrista de la historia</title>
+</head>
+
+<body>
+    <main class="main">
+
+        <h1 class="title">¿Cuál es considerado el mejor guitarrista de la historia de la música?</h1>
+        <form class="form">
+            <select name="singers" id="singer" class="singers js-select">
+                <option value="choose" class="js-choose">Despliega las opciones</option>
+                <option value="berry" class="js-berry">Chuk Berry</option>
+                <option value="bowie" class="js-bowie">David Bowie</option>
+                <option value="mercury" class="js-mercury">Fredy Mercury</option>
+                <option value="cohen" class="js-cohen">Leonard Cohen </option>
+                <option value="hendrix" class="js-hendrix">Jimmy Hendrix</option>
+            </select>
+            <p class="form__message js-message"></p>
+            <input type="button" name="juega" value="Play" class="form__play-button js-play-button" />
+        </form>
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
