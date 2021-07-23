@@ -1,10 +1,9 @@
 "use strict";
-
+const playButton = document.querySelector(".js-play-button");
 const artist = document.querySelector(".js-select");
 const message = document.querySelector(".js-message");
-const playButton = document.querySelector(".js-play-button");
 
-function addMessageFuntionhandler() {
+function Functionhandler() {
   message.classList.remove("red");
   if (artist.value === "bowie") {
     message.innerHTML =
@@ -32,12 +31,12 @@ function addMessageFuntionhandler() {
   }
 }
 
-playButton.addEventListener("click", addMessageFuntionhandler);
+playButton.addEventListener("click", Functionhandler);
 
-const newWindows = document.querySelector(".js-new-windows");
+const windowsHendrix = document.querySelector(".js-window-hendrix");
 
 function functionYouHaveWon() {
-  newWindows.innerHTML = `
+  windowsHendrix.innerHTML = `
   <div class="container-hendrix">
   <img src="./assets/images/hendrix.png" alt="hendrix" class="hendrix"/>
   <div class="message">
@@ -57,7 +56,7 @@ function functionYouHaveWon() {
 }
 
 function eventReturn() {
-  const youHaveWon = document.querySelector(".message");
+  const isTrue = document.querySelector(".message");
 }
 
 //# sourceMappingURL=main.js.map
